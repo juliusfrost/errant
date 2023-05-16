@@ -7,7 +7,7 @@ base_dir = Path(__file__).resolve().parent
 # Readme text for long description
 with open(base_dir/"README.md") as f:
     readme = f.read()
-    
+
 setup(
     name = "errant",
     version = "2.3.3",
@@ -17,11 +17,11 @@ setup(
     long_description_content_type = "text/markdown",
     author = "Christopher Bryant, Mariano Felice",
     author_email = "christopher.bryant@cl.cam.ac.uk",
-    url = "https://github.com/chrisjbryant/errant",    
+    url = "https://github.com/chrisjbryant/errant",
     keywords = ["automatic annotation", "grammatical errors", "natural language processing"],
     python_requires = ">= 3.6",
-    install_requires = ["spacy>=2.2.0,<3", "rapidfuzz>=2.0.0"],
-    packages = find_packages(),    
+    install_requires = ["spacy>=3,<4", "rapidfuzz>=2.0.0"],
+    packages = find_packages(),
     include_package_data=True,
     entry_points = {
         "console_scripts": [
